@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace CommonUI
 {
-    public class PopupManager : MonoBehaviour
+    public class PopupManager : Singleton<PopupManager>
     {
         [SerializeField] private Transform m_ParentCanvas;
         [SerializeField] private GameObject m_CommonPopupPrefab;
