@@ -19,6 +19,11 @@ namespace CommonUI
         private string m_Yes;
         private string m_No;
 
+        public delegate void ClickYes();
+        public delegate void ClickNo();
+        private ClickYes m_ClickYes = null;
+        private ClickNo m_ClickNo = null;
+
         private void Awake()
         {
             m_TextTitle = transform.Find("Text_Title").GetComponent<Text>();
@@ -32,14 +37,33 @@ namespace CommonUI
             m_ButtonNo.onClick.AddListener(OnClickNo);
         }
 
+        public void Setup(string title, string content, string yes, string no)
+        {
+            m_Title = title;
+            m_Content = content;
+            m_Yes = yes;
+            m_No = no;
+
+            m_TextTitle.text = m_Title;
+            m_TextContent.text = m_Content;
+            m_TextYes.text = m_Yes;
+            m_TextNo.text = m_No;
+        }
+
+        public void SetCallback(ClickYes yesCallback, ClickNo noCallback)
+        {
+            m_ClickYes = yesCallback;
+            m_ClickNo = noCallback;
+        }
+
         private void OnClickYes()
         {
-
+            m_ClickYes();
         }
 
         private void OnClickNo()
         {
-            Close();
+            m_ClickNo();
         }
 
         private void Close()
