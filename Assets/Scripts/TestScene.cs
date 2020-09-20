@@ -13,7 +13,7 @@ public class TestScene : MonoBehaviour
 
     private void OnClickPopupYes()
     {
-        Debug.Log("예 버튼을 클릭하였습니다.");
+        PopupManager.Instance.ShowToastPopup("예 버튼을 클릭하였습니다.");
     }
 
     private void OnClickPopupNo()
