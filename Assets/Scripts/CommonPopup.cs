@@ -65,10 +65,5 @@ namespace CommonUI
         {
             m_ClickNo();
         }
-
-        private void Close()
-        {
-            Destroy(gameObject);
-        }
     }
 }
