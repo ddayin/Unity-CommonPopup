@@ -14,7 +14,8 @@ This project is sample project for common popup in mobile game.
 
 <pre>
 <code>
-PopupManager.Instance.ShowCommonPopup("Title", "Content blah blah", "Yes", "No", OnClickPopupYes, OnClickPopupNo);
+PopupManager.Instance.ShowCommonPopup("Title", "Content blah blah", "Yes", "No", OnClickPopupYes, OnClickPopupNo);   
+PopupManager.Instance.ShowToastPopup("You've clicked Yes button.");
 </code>
 </pre>
 
