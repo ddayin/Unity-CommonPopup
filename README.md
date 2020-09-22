@@ -1,6 +1,6 @@
 # Unity-CommonPopup
 
-This project is sample project for game shop in mobile game.
+This project is sample project for  in mobile game.
 
 https://ddayin.tistory.com/319
 
