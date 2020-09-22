@@ -12,11 +12,11 @@ This project is sample project for common popup in mobile game.
 
 # How to use?
 
-[pre]
-[code]
+<pre>
+<code>
 PopupManager.Instance.ShowCommonPopup("Title", "Content blah blah", "Yes", "No", OnClickPopupYes, OnClickPopupNo);
-[/code]
-[/pre]
+</code>
+</pre>
 
 # How to develop common popup?
 
