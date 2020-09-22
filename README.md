@@ -8,7 +8,7 @@ This project is sample project for common popup in mobile game.
 - Visual Studio 2019 Community
 - Target OS : Android / iOS
 
-# Why CommonPopup
+# Why CommonPopup?
 
 # How to use?
 
