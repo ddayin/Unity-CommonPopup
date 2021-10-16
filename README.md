@@ -19,10 +19,6 @@ PopupManager.Instance.ShowToastPopup("You've clicked Yes button.");
 </code>
 </pre>
 
-# How to develop common popup?
-
-https://ddayin.tistory.com/319
-
 # todo list
 
 # Development progress with screenshot
